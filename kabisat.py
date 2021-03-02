@@ -1,2 +1,9 @@
 year = int(input())
-print(True if year % 400 == 0 and year % 100 != 0 or year % 4 == 0 else False)
+if year % 400 == 0:
+    print('is_leap_year')
+elif year % 100 == 0:
+    print('not_leap_year')
+elif year % 4 == 0:
+    print('is_leap_year')
+else:
+    print('not_leap_year')
